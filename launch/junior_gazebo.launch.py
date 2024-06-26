@@ -20,9 +20,6 @@ def generate_launch_description():
             output='screen'
         )
     )
-
-    
-
     packagePath = FindPackageShare('junior_model')
 
     ld.add_action(
@@ -40,16 +37,12 @@ def generate_launch_description():
             }]
         )
     )
-
     ld.add_action(
         Node(
             package='joint_state_publisher_gui',
             executable='joint_state_publisher_gui'
         )
     )
-
-    
-
     ld.add_action(
         Node(
             package='gazebo_ros',

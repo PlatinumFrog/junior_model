@@ -205,36 +205,77 @@
     <gazebo reference="Chassis">
         <visual>
             <material>
-                <ambient>0 0 0 0</ambient>
-                <diffuse>1 1 0 1</diffuse>
-                <specular>1 1 0 1</specular>
+                <diffuse>1 0 0 1</diffuse>
+                <ambient>0.1 0.02 0.02 1</ambient>
                 <emissive>0 0 0 0</emissive>
             </material>
         </visual>
     </gazebo>
     <gazebo reference="FrontBumper">
-        <material>Gazebo/Black</material>
+        <visual>
+            <material>
+                <diffuse>0.1 0.1 0.1 1</diffuse>
+                <ambient>0 0 0 1</ambient>
+                <emissive>0 0 0 0</emissive>
+            </material>
+        </visual>
     </gazebo>
     <gazebo reference="BackBumper">
-        <material>Gazebo/Black</material>
+        <visual>
+            <material>
+                <diffuse>0.1 0.1 0.1 1</diffuse>
+                <ambient>0 0 0 1</ambient>
+                <emissive>0 0 0 0</emissive>
+            </material>
+        </visual>
     </gazebo>
     <gazebo reference="FrontLidar">
         <material>Gazebo/Turquoise</material>
     </gazebo>
     <gazebo reference="FrontLidarGlass">
-        <material>Gazebo/Bricks</material>
+        <visual>
+            <material>
+                <diffuse>0.1 0.1 0.1 1</diffuse>
+                <ambient>0 0 0 1</ambient>
+                <emissive>0 0 0 0</emissive>
+            </material>
+        </visual>
     </gazebo>
     <gazebo reference="WheelLeftFront">
-        <material>Gazebo/Black</material>
+        <visual>
+            <material>
+                <diffuse>0.1 0.1 0.1 1</diffuse>
+                <ambient>0 0 0 1</ambient>
+                <emissive>0 0 0 0</emissive>
+            </material>
+        </visual>
     </gazebo>
     <gazebo reference="WheelRightFront">
-        <material>Gazebo/Black</material>
+        <visual>
+            <material>
+                <diffuse>0.1 0.1 0.1 1</diffuse>
+                <ambient>0 0 0 1</ambient>
+                <emissive>0 0 0 0</emissive>
+            </material>
+        </visual>
     </gazebo>
     <gazebo reference="WheelLeftBack">
-        <material>Gazebo/Black</material>
+        <visual>
+            <material>
+                <diffuse>0.1 0.1 0.1 1</diffuse>
+                <ambient>0 0 0 1</ambient>
+                <emissive>0 0 0 0</emissive>
+            </material>
+        </visual>
     </gazebo>
     <gazebo reference="WheelRightBack">
-        <material>Gazebo/Black</material>
+        <visual>
+            <material>
+                <diffuse>0.1 0.1 0.1 1</diffuse>
+                <ambient>0 0 0 1</ambient>
+                <emissive>0 0 0 0</emissive>
+            </material>
+        </visual>
     </gazebo>
 
 
@@ -243,7 +284,7 @@
     <joint name="ChassisJoint" type="fixed">
         <parent link="base_link"/>
         <child link="Chassis"/>
-        <origin xyz="1 0 0.23"/>
+        <origin xyz="0 0 0.23"/>
     </joint>
 
     <joint name="FrontLidarHolster" type="fixed">
