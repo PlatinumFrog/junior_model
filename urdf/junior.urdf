@@ -243,7 +243,7 @@
     <joint name="ChassisJoint" type="fixed">
         <parent link="base_link"/>
         <child link="Chassis"/>
-        <origin xyz="1 0 1"/>
+        <origin xyz="1 0 0.23"/>
     </joint>
 
     <joint name="FrontLidarHolster" type="fixed">
