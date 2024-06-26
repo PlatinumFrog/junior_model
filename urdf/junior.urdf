@@ -27,12 +27,7 @@
     </material>
 
     <!-- Base Link -->
-    <link name="base_link">
-        <inertial>
-            <mass value="0.01"/>
-            <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
-        </inertial>
-    </link>
+    <link name="base_link"/>
 
     <!-- Chassis Link -->
     <link name="Chassis">
@@ -42,6 +37,11 @@
             </geometry>
             <material name="red"/>
         </visual>
+        <collision>
+            <geometry>
+                <mesh filename="file://$(find junior_model)/meshes/robitChassis.stl"/>
+            </geometry>
+        </collision>
        <inertial>
             <mass value="0.01"/>
             <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
@@ -56,6 +56,11 @@
             </geometry>
             <material name="black"/>
         </visual>
+        <collision>
+            <geometry>
+                <mesh filename="file://$(find junior_model)/meshes/robitFrontBumper.stl"/>
+            </geometry>
+        </collision>
         <inertial>
             <mass value="0.01"/>
             <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
@@ -71,6 +76,11 @@
             </geometry>
             <material name="black"/>
         </visual>
+        <collision>
+            <geometry>
+                <mesh filename="file://$(find junior_model)/meshes/robitBackBumper.stl"/>
+            </geometry>
+        </collision>
         <inertial>
             <mass value="0.01"/>
             <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
@@ -86,6 +96,11 @@
             </geometry>
             <material name="skyblue"/>
         </visual>
+        <collision>
+            <geometry>
+                <mesh filename="file://$(find junior_model)/meshes/robitFrontLidarCase.stl"/>
+            </geometry>
+        </collision>
         <inertial>
             <mass value="0.01"/>
             <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
@@ -100,6 +115,11 @@
             </geometry>
             <material name="black"/>
         </visual>
+        <collision>
+            <geometry>
+                <mesh filename="file://$(find junior_model)/meshes/robitFrontLidarGlass.stl"/>
+            </geometry>
+        </collision>
         <inertial>
             <mass value="0.01"/>
             <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
@@ -114,6 +134,11 @@
             </geometry>
             <material name="black"/>
         </visual>
+        <collision>
+            <geometry>
+                <mesh filename="file://$(find junior_model)/meshes/robitWheel.stl"/>
+            </geometry>
+        </collision>
         <inertial>
             <mass value="0.01"/>
             <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
@@ -128,6 +153,11 @@
             </geometry>
             <material name="black"/>
         </visual>
+        <collision>
+            <geometry>
+                <mesh filename="file://$(find junior_model)/meshes/robitWheel.stl"/>
+            </geometry>
+        </collision>
        <inertial>
             <mass value="0.01"/>
             <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
@@ -142,6 +172,11 @@
             </geometry>
             <material name="black"/>
         </visual>
+        <collision>
+            <geometry>
+                <mesh filename="file://$(find junior_model)/meshes/robitWheel.stl"/>
+            </geometry>
+        </collision>
         <inertial>
             <mass value="0.01"/>
             <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
@@ -156,50 +191,49 @@
             </geometry>
             <material name="black"/>
         </visual>
+        <collision>
+            <geometry>
+                <mesh filename="file://$(find junior_model)/meshes/robitWheel.stl"/>
+            </geometry>
+        </collision>
         <inertial>
             <mass value="0.01"/>
             <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
         </inertial>
     </link>
 
-
-    <gazebo reference="base_link">
-        <turnGravityOff>true</turnGravityOff>
-    </gazebo>
     <gazebo reference="Chassis">
-        <turnGravityOff>true</turnGravityOff>
-        <material>Gazebo/Red</material>
+        <visual>
+            <material>
+                <ambient>0 0 0 0</ambient>
+                <diffuse>1 1 0 1</diffuse>
+                <specular>1 1 0 1</specular>
+                <emissive>0 0 0 0</emissive>
+            </material>
+        </visual>
     </gazebo>
     <gazebo reference="FrontBumper">
-        <turnGravityOff>true</turnGravityOff>
         <material>Gazebo/Black</material>
     </gazebo>
     <gazebo reference="BackBumper">
-        <turnGravityOff>true</turnGravityOff>
         <material>Gazebo/Black</material>
     </gazebo>
     <gazebo reference="FrontLidar">
-        <turnGravityOff>true</turnGravityOff>
-        <material>Gazebo/Cyan</material>
+        <material>Gazebo/Turquoise</material>
     </gazebo>
     <gazebo reference="FrontLidarGlass">
-        <turnGravityOff>true</turnGravityOff>
-        <material>Gazebo/Glass</material>
+        <material>Gazebo/Bricks</material>
     </gazebo>
     <gazebo reference="WheelLeftFront">
-        <turnGravityOff>true</turnGravityOff>
         <material>Gazebo/Black</material>
     </gazebo>
     <gazebo reference="WheelRightFront">
-        <turnGravityOff>true</turnGravityOff>
         <material>Gazebo/Black</material>
     </gazebo>
     <gazebo reference="WheelLeftBack">
-        <turnGravityOff>true</turnGravityOff>
         <material>Gazebo/Black</material>
     </gazebo>
     <gazebo reference="WheelRightBack">
-        <turnGravityOff>true</turnGravityOff>
         <material>Gazebo/Black</material>
     </gazebo>
 
