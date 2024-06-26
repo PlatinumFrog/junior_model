@@ -43,7 +43,7 @@
             </geometry>
         </collision>
        <inertial>
-            <mass value="0.01"/>
+            <mass value="1"/>
             <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
         </inertial>
     </link>
@@ -62,7 +62,7 @@
             </geometry>
         </collision>
         <inertial>
-            <mass value="0.01"/>
+            <mass value="1"/>
             <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
         </inertial>
     </link>
@@ -82,7 +82,7 @@
             </geometry>
         </collision>
         <inertial>
-            <mass value="0.01"/>
+            <mass value="1"/>
             <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
         </inertial>
     </link>
@@ -102,7 +102,7 @@
             </geometry>
         </collision>
         <inertial>
-            <mass value="0.01"/>
+            <mass value="1"/>
             <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
         </inertial>
     </link>
@@ -121,7 +121,7 @@
             </geometry>
         </collision>
         <inertial>
-            <mass value="0.01"/>
+            <mass value="1"/>
             <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
         </inertial>
     </link>
@@ -140,7 +140,7 @@
             </geometry>
         </collision>
         <inertial>
-            <mass value="0.01"/>
+            <mass value="1"/>
             <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
         </inertial>
     </link>
@@ -159,7 +159,7 @@
             </geometry>
         </collision>
        <inertial>
-            <mass value="0.01"/>
+            <mass value="1"/>
             <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
         </inertial>
     </link>
@@ -178,7 +178,7 @@
             </geometry>
         </collision>
         <inertial>
-            <mass value="0.01"/>
+            <mass value="1"/>
             <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
         </inertial>
     </link>
@@ -197,7 +197,7 @@
             </geometry>
         </collision>
         <inertial>
-            <mass value="0.01"/>
+            <mass value="1"/>
             <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
         </inertial>
     </link>
@@ -243,7 +243,7 @@
     <joint name="ChassisJoint" type="fixed">
         <parent link="base_link"/>
         <child link="Chassis"/>
-        <origin xyz="1 0 0.23"/>
+        <origin xyz="1 0 1"/>
     </joint>
 
     <joint name="FrontLidarHolster" type="fixed">
